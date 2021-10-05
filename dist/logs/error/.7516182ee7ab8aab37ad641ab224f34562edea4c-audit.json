@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/user/Document/Doci Projects/decagon/dist/logs/error/.7516182ee7ab8aab37ad641ab224f34562edea4c-audit.json",
+    "files": [
+        {
+            "date": 1633464847928,
+            "name": "/Users/user/Document/Doci Projects/decagon/dist/logs/error/2021-10-05.log",
+            "hash": "5c24f88d292faf8995bd044feaabe8be"
+        }
+    ]
+}

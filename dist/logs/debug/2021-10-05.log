@@ -1,0 +1,6 @@
+2021-10-05 21:14:08 info: =================================
+2021-10-05 21:14:08 info: ======= ENV: production =======
+2021-10-05 21:14:08 info: 🚀 App listening on the port 3000
+2021-10-05 21:14:08 info: =================================
+2021-10-05 21:20:03 error: [POST] /signup >> StatusCode:: 409, Message:: This email brainiacten@gmail.com already exists
+2021-10-05 21:20:03 info: ::1 - - [05/Oct/2021:20:20:03 +0000] "POST /signup HTTP/1.1" 409 61 "-" "PostmanRuntime/7.26.1"

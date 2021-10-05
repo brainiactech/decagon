@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const supertest_1 = (0, tslib_1.__importDefault)(require("supertest"));
+const app_1 = (0, tslib_1.__importDefault)(require("../app"));
+const index_route_1 = (0, tslib_1.__importDefault)(require("../routes/index.route"));
+const mongoose_1 = (0, tslib_1.__importDefault)(require("mongoose"));
+afterAll(async () => {
+    await mongoose_1.default.disconnect();
+    await new Promise(resolve => setTimeout(() => resolve(), 500));
+});
+describe('Testing Index', () => {
+    describe('[GET] /', () => {
+        it('response statusCode 200', () => {
+            const indexRoute = new index_route_1.default();
+            const app = new app_1.default([indexRoute]);
+            return (0, supertest_1.default)(app.getServer()).get(`${indexRoute.path}`).expect(200);
+        });
+    });
+});
+//# sourceMappingURL=index.test.js.map
